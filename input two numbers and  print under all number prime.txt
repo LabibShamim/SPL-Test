@@ -1,0 +1,36 @@
+package myfastproject;
+import java.util.Scanner;
+public class test {
+
+	public static void main(String[] args) {
+		
+		int m,n,count=0;
+		Scanner a=new Scanner(System.in);
+		System.out.print("Enter The First Number =");
+		n=a.nextInt();
+		System.out.print("Enter The Last Number =");
+		m=a.nextInt();
+		
+		for(int i=n;i<=m;i++) {
+			
+			for(int j=2;j<i;j++) {
+				
+				if(i%j==0) {
+					count++;
+					break;
+				}
+				
+				
+			}
+		if(count==0) {
+				System.out.println("prime number is = "+i);
+				
+		}
+		count=0;
+		
+			
+		}
+		
+	}
+
+}

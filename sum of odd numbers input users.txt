@@ -1,0 +1,20 @@
+package myfastproject;
+import java.util.Scanner;
+public class test {
+
+	public static void main(String[] args) {
+		int m,n,sum=0;
+		
+		Scanner a=new Scanner(System.in);
+		System.out.print("enter number 1 = ");
+		m=a.nextInt();
+		System.out.print("enter number 2 = ");
+		n=a.nextInt();
+		 for(int i=m;i<=n;i+=2) {
+			  sum =sum+i;
+			 
+		 }
+		 System.out.print("sum of odd number = "+sum);
+	}    
+
+}

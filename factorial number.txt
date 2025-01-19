@@ -1,0 +1,18 @@
+package myfastproject;
+import java.util.Scanner;
+public class test {
+
+	public static void main(String[] args) {
+		int stor=1;
+		System.out.print("Enter Number = ");
+		Scanner num=new Scanner(System.in);
+		int n=num.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			 stor = stor *i;
+			
+		}
+		System.out.print("Factorial Value is ="+stor);
+	}    
+
+}
