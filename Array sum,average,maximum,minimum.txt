@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class array {
+
+	public static void main(String[] args) {
+		int[] num = new int[10];
+		int sum=0;
+		int le=num.length;
+		Scanner add = new Scanner(System.in);
+		for(int i=0;i<10;i++) {
+			System.out.print("Enter Value :");
+			num[i]=add.nextInt();
+			sum=sum+num[i];
+		}
+		float aver=sum/le;
+		System.out.println("Total sum is :"+sum);
+		System.out.println("Average is :"+aver);
+		
+		int max=num[0];
+		for(int i=1;i<10;i++) {
+			if(max<num[i]) {
+				max=num[i];
+			}
+		}
+		System.out.println("Maximum Number is :"+max);
+		int min=num[0];
+		for(int i=1;i<10;i++) {
+			if(min>num[i]) {
+				min=num[i];
+			}
+		}
+		System.out.print("Minimum Number is :"+min);
+	}
+
+}
